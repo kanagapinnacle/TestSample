@@ -23,4 +23,17 @@ public class AvailabilityTest extends TestUtil {
 				"Assertion Failed:Expecting response 200 , Response Code returned is:" + response.statusCode());
 
 	}
+	
+	
+	@Test
+	public void availabiltyJson1() {
+		String uri = getProperty(Constants.UI_BASE_URL) ;
+		Response response = RestAssured.given().contentType("application/json").when().get(uri).then().extract()
+				.response();
+		// String jsonString =response.getBody().asString();
+		logger.debug(uri);
+		assertTrue((response.statusCode() == 404),
+				"Assertion Failed:Expecting response 200 , Response Code returned is:" + response.statusCode());
+
+	}
 }
