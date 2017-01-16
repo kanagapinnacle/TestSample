@@ -23,7 +23,7 @@ public class AvailabilityTest extends TestUtil {
 				"Assertion Failed:Expecting response 200 , Response Code returned is:" + response.statusCode());
 
 	}
-	
+	/*
 	
 	@Test
 	public void availabiltyJson1() {
@@ -35,5 +35,5 @@ public class AvailabilityTest extends TestUtil {
 		assertTrue((response.statusCode() == 404),
 				"Assertion Failed:Expecting response 200 , Response Code returned is:" + response.statusCode());
 
-	}
+	}*/
 }
