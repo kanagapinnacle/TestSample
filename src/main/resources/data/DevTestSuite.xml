@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DevTest" verbose="1" preserve-order="true">
+	<parameter name="config-file" value="lab.configuration.properties/"/>
+	<test name="AvailabilityTest">
+        <packages>
+            <package name="com.example.*" />
+        </packages>
+        <classes>
+            <class name="com.example.AvailabilityTest"/>
+        </classes>
+    </test>
+</suite>
+
+
