@@ -1,0 +1,308 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ge.current.em:em-integration-test:jar:2.0.0
+[WARNING] 'build.plugins.plugin.version' for com.atlassian.maven.plugins:maven-clover2-plugin is missing. @ line 110, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building em-integration-test 2.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ em-integration-test ---
+[INFO] Deleting /Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/em-integrations-tests/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ em-integration-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ em-integration-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/em-integrations-tests/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ em-integration-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/em-integrations-tests/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ em-integration-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ em-integration-test ---
+[INFO] Surefire report directory: /Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/em-integrations-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ge.current.em.KPITest
+Configuring TestNG with: TestNG652Configurator
+18:24:12.607 [main] INFO  com.ge.current.em.TestUtil - In SuiteTestBase.javain SuiteTestBase
+18:24:12.624 [main] INFO  com.ge.current.em.KPITest - urihttps://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io/getData?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null&granularity=15 Minutes
+18:24:14.471 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:19.815 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:20.024 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:24:20.028 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:24:20.028 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:24:20.029 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:24:20.029 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:24:20.029 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /getData?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null&granularity=15%20Minutes HTTP/1.1
+18:24:20.031 [main] DEBUG org.apache.http.wire -  >> "GET /getData?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null&granularity=15%20Minutes HTTP/1.1[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:24:20.033 [main] DEBUG org.apache.http.headers - >> GET /getData?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null&granularity=15%20Minutes HTTP/1.1
+18:24:20.033 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:24:20.033 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:24:20.034 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:24:20.034 [main] DEBUG org.apache.http.headers - >> Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io
+18:24:20.034 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:24:20.034 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:24:20.034 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:24:20.185 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 12 Jan 2017 23:24:20 GMT[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "X-Vcap-Request-Id: ca1b630f-21af-4dff-6779-c8824ccdf8a7[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "Content-Length: 281[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: TS0199fba1=0118c62c55f11b21d8466ad0f2f3ea4ccd05c6cd9e05322e193e02a1b983c83f8d4afe2ef3032cfdd5ad7115492bec5c952ce17c04; Path=/; Domain=.predix.io[\r][\n]"
+18:24:20.187 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:24:20.188 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 500 Internal Server Error
+18:24:20.188 [main] DEBUG org.apache.http.headers - << HTTP/1.1 500 Internal Server Error
+18:24:20.188 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+18:24:20.188 [main] DEBUG org.apache.http.headers - << Date: Thu, 12 Jan 2017 23:24:20 GMT
+18:24:20.188 [main] DEBUG org.apache.http.headers - << X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0
+18:24:20.188 [main] DEBUG org.apache.http.headers - << X-Vcap-Request-Id: ca1b630f-21af-4dff-6779-c8824ccdf8a7
+18:24:20.188 [main] DEBUG org.apache.http.headers - << Content-Length: 281
+18:24:20.188 [main] DEBUG org.apache.http.headers - << Set-Cookie: TS0199fba1=0118c62c55f11b21d8466ad0f2f3ea4ccd05c6cd9e05322e193e02a1b983c83f8d4afe2ef3032cfdd5ad7115492bec5c952ce17c04; Path=/; Domain=.predix.io
+18:24:20.191 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+18:24:20.219 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+18:24:20.220 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:24:20.353 [main] INFO  com.ge.current.em.KPITest - urihttps://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io/getEnterpriseEnergyData?enterpriseSourceKey=ENTERPRISE_dc77a3f5-0a82-3538-ad06-d1f032835a2c&timePeriod=201701&normalization=none&isHistoric=false&endDate=20170103
+18:24:20.376 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:20.378 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:20.531 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:24:20.531 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:24:20.531 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:24:20.531 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:24:20.531 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:24:20.531 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /getEnterpriseEnergyData?enterpriseSourceKey=ENTERPRISE_dc77a3f5-0a82-3538-ad06-d1f032835a2c&timePeriod=201701&normalization=none&isHistoric=false&endDate=20170103 HTTP/1.1
+18:24:20.532 [main] DEBUG org.apache.http.wire -  >> "GET /getEnterpriseEnergyData?enterpriseSourceKey=ENTERPRISE_dc77a3f5-0a82-3538-ad06-d1f032835a2c&timePeriod=201701&normalization=none&isHistoric=false&endDate=20170103 HTTP/1.1[\r][\n]"
+18:24:20.532 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:24:20.532 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:24:20.533 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:24:20.533 [main] DEBUG org.apache.http.wire -  >> "Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io[\r][\n]"
+18:24:20.533 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:24:20.534 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:24:20.534 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:24:20.537 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:24:20.538 [main] DEBUG org.apache.http.headers - >> GET /getEnterpriseEnergyData?enterpriseSourceKey=ENTERPRISE_dc77a3f5-0a82-3538-ad06-d1f032835a2c&timePeriod=201701&normalization=none&isHistoric=false&endDate=20170103 HTTP/1.1
+18:24:20.538 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:24:20.538 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:24:20.538 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:24:20.538 [main] DEBUG org.apache.http.headers - >> Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io
+18:24:20.539 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:24:20.539 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:24:20.539 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:24:20.688 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 12 Jan 2017 23:24:20 GMT[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "X-Vcap-Request-Id: c02b2bca-2aaf-4d14-6733-277ec2703a96[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "Content-Length: 344[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: TS0199fba1=0118c62c556f1c6761a3bee5d1b55665e2e8a6c4a82ed7be089a4c17f24cb2dcb271c837c57c190ed931c5e93f0f46202b45d29289; Path=/; Domain=.predix.io[\r][\n]"
+18:24:20.689 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:24:20.690 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+18:24:20.690 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+18:24:20.690 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+18:24:20.690 [main] DEBUG org.apache.http.headers - << Date: Thu, 12 Jan 2017 23:24:20 GMT
+18:24:20.690 [main] DEBUG org.apache.http.headers - << X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0
+18:24:20.690 [main] DEBUG org.apache.http.headers - << X-Vcap-Request-Id: c02b2bca-2aaf-4d14-6733-277ec2703a96
+18:24:20.690 [main] DEBUG org.apache.http.headers - << Content-Length: 344
+18:24:20.690 [main] DEBUG org.apache.http.headers - << Set-Cookie: TS0199fba1=0118c62c556f1c6761a3bee5d1b55665e2e8a6c4a82ed7be089a4c17f24cb2dcb271c837c57c190ed931c5e93f0f46202b45d29289; Path=/; Domain=.predix.io
+18:24:20.691 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+18:24:20.691 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+18:24:20.691 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:24:20.693 [main] INFO  com.ge.current.em.KPITest - urihttps://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io/getGranularity?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null
+18:24:20.723 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:20.726 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:20.881 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:24:20.881 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:24:20.881 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:24:20.881 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:24:20.881 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:24:20.881 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /getGranularity?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null HTTP/1.1
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "GET /getGranularity?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null HTTP/1.1[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> GET /getGranularity?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor&measure=null HTTP/1.1
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:24:20.882 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 12 Jan 2017 23:24:21 GMT[\r][\n]"
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0[\r][\n]"
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "X-Vcap-Request-Id: 77c02a31-f57c-4d13-4319-fcfb6225d68f[\r][\n]"
+18:24:21.194 [main] DEBUG org.apache.http.wire -  << "Content-Length: 2[\r][\n]"
+18:24:21.195 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: TS0199fba1=0118c62c554d56d4ec1e43086a32bab84d4f9ed77c16dd7d50320eafbd043b4af0b66c1813ee675562fd3b0aef58db3c466967b2c7; Path=/; Domain=.predix.io[\r][\n]"
+18:24:21.195 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:24:21.195 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+18:24:21.195 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+18:24:21.195 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+18:24:21.196 [main] DEBUG org.apache.http.headers - << Date: Thu, 12 Jan 2017 23:24:21 GMT
+18:24:21.196 [main] DEBUG org.apache.http.headers - << X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0
+18:24:21.196 [main] DEBUG org.apache.http.headers - << X-Vcap-Request-Id: 77c02a31-f57c-4d13-4319-fcfb6225d68f
+18:24:21.196 [main] DEBUG org.apache.http.headers - << Content-Length: 2
+18:24:21.196 [main] DEBUG org.apache.http.headers - << Set-Cookie: TS0199fba1=0118c62c554d56d4ec1e43086a32bab84d4f9ed77c16dd7d50320eafbd043b4af0b66c1813ee675562fd3b0aef58db3c466967b2c7; Path=/; Domain=.predix.io
+18:24:21.196 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+18:24:21.197 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+18:24:21.197 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:24:21.199 [main] INFO  com.ge.current.em.KPITest - urihttps://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io/getKPIs?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103
+18:24:21.221 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:21.223 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:21.369 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:24:21.370 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:24:21.370 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:24:21.370 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:24:21.370 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:24:21.370 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /getKPIs?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103 HTTP/1.1
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "GET /getKPIs?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103 HTTP/1.1[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:24:21.370 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:24:21.371 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> GET /getKPIs?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103 HTTP/1.1
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:24:21.371 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:24:21.588 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 12 Jan 2017 23:24:21 GMT[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "X-Vcap-Request-Id: 95ffdc68-53a0-4404-5742-ea40fdd0dfe6[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "Content-Length: 2[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: TS0199fba1=0118c62c557d9065c4a32c87def0423b31c11e2c0fbfabfdf9a39563fea9091dd00efb5b5f0e352c8d84b04542c96fa9d02be31b54; Path=/; Domain=.predix.io[\r][\n]"
+18:24:21.589 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:24:21.589 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+18:24:21.589 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+18:24:21.589 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+18:24:21.589 [main] DEBUG org.apache.http.headers - << Date: Thu, 12 Jan 2017 23:24:21 GMT
+18:24:21.589 [main] DEBUG org.apache.http.headers - << X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0
+18:24:21.589 [main] DEBUG org.apache.http.headers - << X-Vcap-Request-Id: 95ffdc68-53a0-4404-5742-ea40fdd0dfe6
+18:24:21.590 [main] DEBUG org.apache.http.headers - << Content-Length: 2
+18:24:21.590 [main] DEBUG org.apache.http.headers - << Set-Cookie: TS0199fba1=0118c62c557d9065c4a32c87def0423b31c11e2c0fbfabfdf9a39563fea9091dd00efb5b5f0e352c8d84b04542c96fa9d02be31b54; Path=/; Domain=.predix.io
+18:24:21.590 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+18:24:21.590 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+18:24:21.590 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:24:21.592 [main] INFO  com.ge.current.em.KPITest - urihttps://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io/getKPIMeasures?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor
+18:24:21.603 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:21.604 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io:443
+18:24:21.752 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:24:21.752 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:24:21.752 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:24:21.752 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:24:21.753 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:24:21.753 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /getKPIMeasures?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor HTTP/1.1
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "GET /getKPIMeasures?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor HTTP/1.1[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> GET /getKPIMeasures?resourceUid=SITE_0270b77c-8d1b-3820-aafd-c81ee60b557b&startDate=20170101&endDate=20170103&kpi=zoneAirTempSensor HTTP/1.1
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Host: ie-ems-ui-services-ems-dev.run.asv-pr-pub.ice.predix.io
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:24:21.753 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 12 Jan 2017 23:24:21 GMT[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "X-Vcap-Request-Id: 930a2eca-1510-438f-5562-f803a09c2b1a[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "Content-Length: 196[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: TS0199fba1=0118c62c55da126165222e92cf7fbaac038a2fdc3049b0a3f791116cfc477eb42b9ee0577fc6d8a8ae5220d976c7e8369212fb372e; Path=/; Domain=.predix.io[\r][\n]"
+18:24:22.003 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:24:22.003 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 500 Internal Server Error
+18:24:22.003 [main] DEBUG org.apache.http.headers - << HTTP/1.1 500 Internal Server Error
+18:24:22.003 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+18:24:22.004 [main] DEBUG org.apache.http.headers - << Date: Thu, 12 Jan 2017 23:24:21 GMT
+18:24:22.004 [main] DEBUG org.apache.http.headers - << X-Application-Context: ie-ems-ui-services-ems-dev:cloud:0
+18:24:22.004 [main] DEBUG org.apache.http.headers - << X-Vcap-Request-Id: 930a2eca-1510-438f-5562-f803a09c2b1a
+18:24:22.004 [main] DEBUG org.apache.http.headers - << Content-Length: 196
+18:24:22.004 [main] DEBUG org.apache.http.headers - << Set-Cookie: TS0199fba1=0118c62c55da126165222e92cf7fbaac038a2fdc3049b0a3f791116cfc477eb42b9ee0577fc6d8a8ae5220d976c7e8369212fb372e; Path=/; Domain=.predix.io
+18:24:22.004 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+18:24:22.004 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+18:24:22.004 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 20.2 sec <<< FAILURE! - in com.ge.current.em.KPITest
+availabilityData(com.ge.current.em.KPITest)  Time elapsed: 7.731 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed:Response Code returned is:500 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.ge.current.em.KPITest.availabilityData(KPITest.java:85)
+
+availabilityKPIMeasures(com.ge.current.em.KPITest)  Time elapsed: 0.415 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed:Response Code returned is:500 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.ge.current.em.KPITest.availabilityKPIMeasures(KPITest.java:41)
+
+
+Results :
+
+Failed tests: 
+  KPITest.availabilityData:85 Assertion Failed:Response Code returned is:500 expected [true] but found [false]
+  KPITest.availabilityKPIMeasures:41 Assertion Failed:Response Code returned is:500 expected [true] but found [false]
+
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 26.937 s
+[INFO] Finished at: 2017-01-12T18:24:32-05:00
+[INFO] Final Memory: 31M/297M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project em-integration-test: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/em-integrations-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

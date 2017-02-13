@@ -2,6 +2,11 @@ package com.example;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.testng.annotations.Test;
@@ -21,7 +26,17 @@ public class AvailabilityTest extends TestUtil {
 		logger.debug(uri);
 		assertTrue((response.statusCode() == 200),
 				"Assertion Failed:Expecting response 200 , Response Code returned is:" + response.statusCode());
-
+			try(FileWriter fw = new FileWriter("testwriting.txt", true);
+			    BufferedWriter bw = new BufferedWriter(fw);
+			    PrintWriter out = new PrintWriter(bw))
+			{
+			   out.println("new object");
+			   bw.close();
+			   fw.flush();
+			   fw.close();
+			} catch (IOException e) {
+			    //exception handling left as an exercise for the reader
+			}
 	}
 	/*
 	
