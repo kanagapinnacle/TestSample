@@ -30,7 +30,7 @@ public class AvailabilityTest extends TestUtil {
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))
 			{
-			   out.println("new object");
+			   out.println("new object"+System.currentTimeMillis());
 			   bw.close();
 			   fw.flush();
 			   fw.close();
