@@ -1,3 +1,4 @@
-com/example/Constants.class
-com/example/AvailabilityTest.class
-com/example/TestUtil.class
+com/example/tests/Constants.class
+com/example/dataProvider/AvailabilityTestDataProvider.class
+com/example/tests/AvailabilityTest.class
+com/example/tests/TestUtil.class

@@ -1,0 +1,1 @@
+mvn clean test -Dsuite=DevTestSuite -DenvType=dev -P integrationtest

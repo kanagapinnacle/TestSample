@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="8.361" tests="11" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.73-b02"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/karthikkaruppasamy/Documents/workspace-sts-3.8.3.RELEASE/test"/>
+    <property name="java.runtime.version" value="1.8.0_73-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/jx/r4r2zvl16hdcc7qs8n4jc5jm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/karthikkaruppasamy/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="suite" value="DevTestSuite"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local"/>
+    <property name="user.home" value="/Users/karthikkaruppasamy"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="envType" value="dev"/>
+    <property name="user.name" value="kanagaroot"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsuite=DevTestSuite -DenvType=dev -P integrationtest"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_73"/>
+    <property name="java.ext.dirs" value="/Users/karthikkaruppasamy/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="availabiltyJson" classname="com.example.tests.AvailabilityTest" time="7.364"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.201">
+    <failure message="Assertion Failed:Expecting response 200 , Response Code returned is: 404&#10; Petid : 2&#10; expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 2
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
+</failure>
+    <system-out><![CDATA[18:53:57.339 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://petstore.swagger.io:80
+18:53:57.340 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to petstore.swagger.io:80
+18:53:57.373 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:53:57.373 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:53:57.373 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:53:57.373 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:53:57.374 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:53:57.374 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /v2/pet/2 HTTP/1.1
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "GET /v2/pet/2 HTTP/1.1[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Host: petstore.swagger.io[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:53:57.374 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:53:57.375 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> GET /v2/pet/2 HTTP/1.1
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Host: petstore.swagger.io
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:53:57.375 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:53:57.408 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 404 Not Found[\r][\n]"
+18:53:57.409 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 23 Feb 2017 23:53:58 GMT[\r][\n]"
+18:53:57.409 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "Connection: close[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+18:53:57.410 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:53:57.410 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 404 Not Found
+18:53:57.410 [main] DEBUG org.apache.http.headers - << HTTP/1.1 404 Not Found
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Date: Thu, 23 Feb 2017 23:53:58 GMT
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Connection: close
+18:53:57.411 [main] DEBUG org.apache.http.headers - << Server: Jetty(9.2.9.v20150224)
+18:53:57.507 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+18:53:57.507 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:53:57.509 [main] INFO  com.example.tests.AvailabilityTest - http://petstore.swagger.io/v2/pet/2
+18:53:57.509 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:53240<->162.125.4.1:443 closed
+]]></system-out>
+  </testcase>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.088">
+    <failure message="Assertion Failed:Expecting response 200 , Response Code returned is: 404&#10; Petid : 3&#10; expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 3
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
+</failure>
+    <system-out><![CDATA[18:53:57.528 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://petstore.swagger.io:80
+18:53:57.528 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to petstore.swagger.io:80
+18:53:57.561 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:53:57.561 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:53:57.561 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:53:57.561 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:53:57.562 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:53:57.562 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /v2/pet/3 HTTP/1.1
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "GET /v2/pet/3 HTTP/1.1[\r][\n]"
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "Host: petstore.swagger.io[\r][\n]"
+18:53:57.562 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:53:57.563 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:53:57.563 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:53:57.563 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:53:57.563 [main] DEBUG org.apache.http.headers - >> GET /v2/pet/3 HTTP/1.1
+18:53:57.563 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:53:57.563 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:53:57.563 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:53:57.564 [main] DEBUG org.apache.http.headers - >> Host: petstore.swagger.io
+18:53:57.564 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:53:57.564 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:53:57.564 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:53:57.600 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 404 Not Found[\r][\n]"
+18:53:57.600 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 23 Feb 2017 23:53:58 GMT[\r][\n]"
+18:53:57.600 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "Connection: close[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+18:53:57.601 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:53:57.601 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 404 Not Found
+18:53:57.601 [main] DEBUG org.apache.http.headers - << HTTP/1.1 404 Not Found
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Date: Thu, 23 Feb 2017 23:53:58 GMT
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Connection: close
+18:53:57.601 [main] DEBUG org.apache.http.headers - << Server: Jetty(9.2.9.v20150224)
+18:53:57.602 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+18:53:57.602 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:53:57.603 [main] INFO  com.example.tests.AvailabilityTest - http://petstore.swagger.io/v2/pet/3
+]]></system-out>
+  </testcase>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.093">
+    <failure message="Assertion Failed:Expecting response 200 , Response Code returned is: 404&#10; Petid : 4&#10; expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 4
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
+</failure>
+    <system-out><![CDATA[18:53:57.624 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://petstore.swagger.io:80
+18:53:57.624 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to petstore.swagger.io:80
+18:53:57.657 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:53:57.657 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:53:57.657 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:53:57.657 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:53:57.657 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:53:57.657 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /v2/pet/4 HTTP/1.1
+18:53:57.657 [main] DEBUG org.apache.http.wire -  >> "GET /v2/pet/4 HTTP/1.1[\r][\n]"
+18:53:57.657 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:53:57.657 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:53:57.657 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:53:57.657 [main] DEBUG org.apache.http.wire -  >> "Host: petstore.swagger.io[\r][\n]"
+18:53:57.658 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:53:57.658 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:53:57.658 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:53:57.658 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> GET /v2/pet/4 HTTP/1.1
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Host: petstore.swagger.io
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:53:57.658 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:53:57.691 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 404 Not Found[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 23 Feb 2017 23:53:58 GMT[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Connection: close[\r][\n]"
+18:53:57.692 [main] DEBUG org.apache.http.wire -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+18:53:57.693 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:53:57.693 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 404 Not Found
+18:53:57.693 [main] DEBUG org.apache.http.headers - << HTTP/1.1 404 Not Found
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Date: Thu, 23 Feb 2017 23:53:58 GMT
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Connection: close
+18:53:57.693 [main] DEBUG org.apache.http.headers - << Server: Jetty(9.2.9.v20150224)
+18:53:57.694 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+18:53:57.694 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:53:57.695 [main] INFO  com.example.tests.AvailabilityTest - http://petstore.swagger.io/v2/pet/4
+]]></system-out>
+  </testcase>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.088"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.103"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.083"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.088"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.084"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.082"/>
+  <testcase name="testPet" classname="com.example.tests.AvailabilityTest" time="0.087">
+    <failure message="Assertion Failed:Expecting response 200 , Response Code returned is: 404&#10; Petid : 11&#10; expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 11
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
+</failure>
+    <system-out><![CDATA[18:53:58.233 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://petstore.swagger.io:80
+18:53:58.234 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to petstore.swagger.io:80
+18:53:58.267 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:53:58.267 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+18:53:58.267 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:53:58.267 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:53:58.267 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:53:58.267 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: GET /v2/pet/11 HTTP/1.1
+18:53:58.267 [main] DEBUG org.apache.http.wire -  >> "GET /v2/pet/11 HTTP/1.1[\r][\n]"
+18:53:58.267 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+18:53:58.267 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:53:58.267 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.wire -  >> "Host: petstore.swagger.io[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> GET /v2/pet/11 HTTP/1.1
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Content-Length: 0
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Host: petstore.swagger.io
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_73)
+18:53:58.268 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:53:58.302 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 404 Not Found[\r][\n]"
+18:53:58.302 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 23 Feb 2017 23:53:59 GMT[\r][\n]"
+18:53:58.303 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+18:53:58.303 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+18:53:58.303 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+18:53:58.303 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+18:53:58.304 [main] DEBUG org.apache.http.wire -  << "Connection: close[\r][\n]"
+18:53:58.304 [main] DEBUG org.apache.http.wire -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+18:53:58.304 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:53:58.304 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 404 Not Found
+18:53:58.304 [main] DEBUG org.apache.http.headers - << HTTP/1.1 404 Not Found
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Date: Thu, 23 Feb 2017 23:53:59 GMT
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Connection: close
+18:53:58.304 [main] DEBUG org.apache.http.headers - << Server: Jetty(9.2.9.v20150224)
+18:53:58.305 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+18:53:58.305 [main] DEBUG i.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+18:53:58.306 [main] INFO  com.example.tests.AvailabilityTest - http://petstore.swagger.io/v2/pet/11
+]]></system-out>
+  </testcase>
+</testsuite>
