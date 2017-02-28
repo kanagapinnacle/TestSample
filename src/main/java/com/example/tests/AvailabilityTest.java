@@ -38,4 +38,15 @@ public class AvailabilityTest extends TestUtil {
 						+ response.statusCode()+"\n Petid : "+petId+"\n");
 	}
 	
+	@Test(dataProvider="orderIdDataProvider",dataProviderClass=AvailabilityTestDataProvider.class)
+	public void testOrder(String orderId){
+		String url ="http://petstore.swagger.io/v2/store/order/"+orderId;
+		Response response = RestAssured.given().contentType("application/json")
+				.when().get(url).then().extract()
+				.response();
+		logger.info(url);
+		assertTrue((response.statusCode() == 200),
+				"Assertion Failed:Expecting response 200 , Response Code returned is: " 
+						+ response.statusCode()+"\n Petid : "+orderId+"\n");
+	}
 }

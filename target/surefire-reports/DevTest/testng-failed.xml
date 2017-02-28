@@ -11,8 +11,9 @@
     <classes>
       <class name="com.example.tests.AvailabilityTest">
         <methods>
+          <include name="testOrder" invocation-numbers="1 2 3"/>
           <include name="initFramework"/>
-          <include name="testPet" invocation-numbers="0 1 2 9"/>
+          <include name="testPet" invocation-numbers="0 4 6 8"/>
         </methods>
       </class> <!-- com.example.tests.AvailabilityTest -->
     </classes>

@@ -24,6 +24,13 @@
     </properties>
 
     <dependencies>
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+		    <groupId>com.opencsv</groupId>
+		    <artifactId>opencsv</artifactId>
+		    <version>3.8</version>
+		</dependency>
+		    	
         <!-- Ported over dependencies need to check if listeners can be used -->
 
         <!--https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2-->

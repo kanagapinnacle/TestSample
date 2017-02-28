@@ -1,8 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 19.072 sec <<< FAILURE! - in TestSuite
-testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.201 sec  <<< FAILURE!
+Tests run: 15, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 20.384 sec <<< FAILURE! - in TestSuite
+testOrder(com.example.tests.AvailabilityTest)  Time elapsed: 0.13 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 2
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testOrder(AvailabilityTest.java:48)
+
+testOrder(com.example.tests.AvailabilityTest)  Time elapsed: 0.128 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 3
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testOrder(AvailabilityTest.java:48)
+
+testOrder(com.example.tests.AvailabilityTest)  Time elapsed: 0.121 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 4
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testOrder(AvailabilityTest.java:48)
+
+testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.152 sec  <<< FAILURE!
 java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
  Petid : 2
  expected [true] but found [false]
@@ -11,27 +38,27 @@ java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Cod
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
 
-testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.088 sec  <<< FAILURE!
+testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.105 sec  <<< FAILURE!
 java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 3
+ Petid : 6
  expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
 
-testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.093 sec  <<< FAILURE!
+testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.113 sec  <<< FAILURE!
 java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 4
+ Petid : 8
  expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
 
-testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.087 sec  <<< FAILURE!
+testPet(com.example.tests.AvailabilityTest)  Time elapsed: 0.105 sec  <<< FAILURE!
 java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 11
+ Petid : 10
  expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
