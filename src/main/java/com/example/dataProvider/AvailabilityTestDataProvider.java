@@ -26,9 +26,10 @@ public class AvailabilityTestDataProvider {
 		CSVReader csvAssetReader = new CSVReader(new FileReader(
 				"src/main/resources/data/orders.csv"));
 		List<String[]> lines = csvAssetReader.readAll();
-		Object[][] ret = new Object[lines.size()][1];
+		Object[][] ret = new Object[lines.size()][2];
 		for (int i = 0; i < lines.size(); i++) {
 			ret[i][0] = lines.get(i)[0];
+			ret[i][1] = lines.get(i)[1];
 		}
 		csvAssetReader.close();
 		return ret;

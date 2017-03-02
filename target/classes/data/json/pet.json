@@ -1,0 +1,18 @@
+{
+  "id": 14,
+  "category": {
+    "id": 3,
+    "name": "Rabbits"
+  },
+  "name": "Rabby",
+  "photoUrls": [
+    "http://newwallpapershd.com/wp-content/uploads/2014/09/Cute-rabbits-desktop-wallpaper.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "tag1"
+    }
+  ],
+  "status": "available"
+}

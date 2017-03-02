@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="11" passed="7">
+<testng-results skipped="0" failed="4" total="15" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8790" started-at="2017-02-28T03:34:55Z" finished-at="2017-02-28T03:35:04Z">
+  <suite name="Default suite" duration-ms="10525" started-at="2017-03-02T04:07:36Z" finished-at="2017-03-02T04:07:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8790" started-at="2017-02-28T03:34:55Z" finished-at="2017-02-28T03:35:04Z">
+    <test name="Default test" duration-ms="10525" started-at="2017-03-02T04:07:36Z" finished-at="2017-03-02T04:07:46Z">
       <class name="com.example.tests.AvailabilityTest">
-        <test-method status="PASS" signature="initFramework(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="initFramework" is-config="true" duration-ms="19" started-at="2017-02-27T22:34:55Z" finished-at="2017-02-27T22:34:55Z">
+        <test-method status="PASS" signature="initFramework(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="initFramework" is-config="true" duration-ms="15" started-at="2017-03-01T23:07:36Z" finished-at="2017-03-01T23:07:36Z">
           <params>
             <param index="0">
               <value>
@@ -16,18 +16,123 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@72e34f77]]>
+                <![CDATA[org.testng.TestRunner@7997b197]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initFramework -->
-        <test-method status="PASS" signature="availabiltyJson()[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="availabiltyJson" duration-ms="7532" started-at="2017-02-27T22:34:55Z" finished-at="2017-02-27T22:35:03Z">
+        <test-method status="PASS" signature="availabiltyJson()[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="availabiltyJson" duration-ms="8064" started-at="2017-03-01T23:07:36Z" finished-at="2017-03-01T23:07:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- availabiltyJson -->
-        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="148" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
+        <test-method status="FAIL" signature="testOrder(java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testOrder" duration-ms="295" started-at="2017-03-01T23:07:44Z" data-provider="orderIdDataProvider" finished-at="2017-03-01T23:07:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testorder1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 1
+testorder1 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 1
+testorder1 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testOrder(AvailabilityTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrder -->
+        <test-method status="PASS" signature="testOrder(java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testOrder" duration-ms="442" started-at="2017-03-01T23:07:44Z" data-provider="orderIdDataProvider" finished-at="2017-03-01T23:07:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testorder2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrder -->
+        <test-method status="PASS" signature="testOrder(java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testOrder" duration-ms="231" started-at="2017-03-01T23:07:45Z" data-provider="orderIdDataProvider" finished-at="2017-03-01T23:07:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testorder3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrder -->
+        <test-method status="PASS" signature="testOrder(java.lang.String, java.lang.String)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testOrder" duration-ms="179" started-at="2017-03-01T23:07:45Z" data-provider="orderIdDataProvider" finished-at="2017-03-01T23:07:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testorder4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrder -->
+        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="144" started-at="2017-03-01T23:07:45Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:45Z">
           <params>
             <param index="0">
               <value>
@@ -71,15 +176,15 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="121" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="132" started-at="2017-03-01T23:07:45Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:45Z">
           <params>
             <param index="0">
               <value>
@@ -90,7 +195,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="118" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
+        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="135" started-at="2017-03-01T23:07:45Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:45Z">
           <params>
             <param index="0">
               <value>
@@ -98,37 +203,15 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="114" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPet -->
-        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="124" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 6
+ Petid : 4
  expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 6
+ Petid : 4
  expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
@@ -156,15 +239,78 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="110" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:03Z">
+        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="111" started-at="2017-03-01T23:07:45Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 5
+ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
+ Petid : 5
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPet -->
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="118" started-at="2017-03-01T23:07:45Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPet -->
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="122" started-at="2017-03-01T23:07:46Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
           <params>
             <param index="0">
               <value>
@@ -175,7 +321,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="128" started-at="2017-02-27T22:35:03Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:04Z">
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="118" started-at="2017-03-01T23:07:46Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
           <params>
             <param index="0">
               <value>
@@ -183,51 +329,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 8
- expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 8
- expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="121" started-at="2017-02-27T22:35:04Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:04Z">
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="120" started-at="2017-03-01T23:07:46Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
           <params>
             <param index="0">
               <value>
@@ -238,7 +343,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="FAIL" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="111" started-at="2017-02-27T22:35:04Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:04Z">
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="107" started-at="2017-03-01T23:07:46Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
           <params>
             <param index="0">
               <value>
@@ -246,51 +351,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 10
- expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Assertion Failed:Expecting response 200 , Response Code returned is: 404
- Petid : 10
- expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.example.tests.AvailabilityTest.testPet(AvailabilityTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPet -->
-        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="121" started-at="2017-02-27T22:35:04Z" data-provider="petIdDataProvider" finished-at="2017-02-27T22:35:04Z">
+        <test-method status="PASS" signature="testPet(java.lang.Integer)[pri:0, instance:com.example.tests.AvailabilityTest@2de8284b]" name="testPet" duration-ms="116" started-at="2017-03-01T23:07:46Z" data-provider="petIdDataProvider" finished-at="2017-03-01T23:07:46Z">
           <params>
             <param index="0">
               <value>
