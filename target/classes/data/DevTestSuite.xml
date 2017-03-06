@@ -5,7 +5,20 @@
 	<parameter name="config-file" value="dev.configuration.properties/"/>
 	<test name="AvailabilityTest">
         <classes>
-            <class name="com.example.tests.AvailabilityTest"/>
+            <class name="com.example.tests.AvailabilityTest">
+            	<methods>
+            		<include name="availabiltyJson"></include>
+            	</methods>
+            </class>
+        </classes>
+    </test>
+    <test name="AvailabilityTest1" >
+        <classes>
+            <class name="com.example.tests.AvailabilityTest">
+            	<methods>
+            		<exclude name="availabiltyJson"></exclude>
+            	</methods>
+            </class>
         </classes>
     </test>
 </suite>
